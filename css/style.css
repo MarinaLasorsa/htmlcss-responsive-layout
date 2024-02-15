@@ -22,7 +22,7 @@ img {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "PT Sans", sans-serif;
 }
 
 /*LAYOUT*/
@@ -47,8 +47,16 @@ body {
 	background-color: white;
     color: black;
     border-radius: 20px;
-    padding: 10px;
+    line-height: 40px;
+    padding: 0 20px;
     text-align: center;
+    display: inline-block;
+}
+
+.button.button-blue {
+	background-color: #0084FD;
+    color: white;
+    padding: 0 40px;
 }
 
 /*HEADER*/
@@ -58,6 +66,7 @@ body {
     color: white;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .page-header .row {
@@ -71,6 +80,28 @@ body {
 
 .header-menu {
 	display: none
+}
+
+/*HERO*/
+
+.hero .card {
+    height: 100%;
+	background-color: #B5DDFF;
+    color: #617789;
+    padding: 20px 15px 0;
+    border-radius: 20px;
+    margin: 12px 12px 0;
+}
+
+
+
+.card-title {
+	color: #0084FD;
+    margin-bottom: 20px;
+}
+
+.hero img {
+	display: block;
 }
 
 /*UTILITIES*/
