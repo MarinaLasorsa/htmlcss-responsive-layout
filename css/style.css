@@ -126,6 +126,10 @@ body {
 
 /*UTILITIES*/
 
+.flex-end {
+	align-self: flex-end;
+}
+
 /*RESPONSIVE*/
 
 @media (min-width: 576px) {
@@ -153,4 +157,13 @@ body {
     .burger-menu {
         display: none
     }
+
+    .card-demo {
+        display: flex;
+    }
+    .card-demo .card-body {
+        width: 50%;
+    }
+    
+    
 }
