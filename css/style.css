@@ -66,7 +66,7 @@ body {
     color: white;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
 }
 
 .page-header .row {
@@ -88,20 +88,41 @@ body {
     height: 100%;
 	background-color: #B5DDFF;
     color: #617789;
-    padding: 20px 15px 0;
+    padding: 20px 20px 0;
     border-radius: 20px;
-    margin: 12px 12px 0;
 }
 
+.hero .row {
+    row-gap: 24px;
+}
 
+.hero .col {
+    padding: 0 12px;
+}
+
+.col:not(.col-demo) .card-body {
+    text-align: center;
+    padding-bottom: 20px;
+}
 
 .card-title {
 	color: #0084FD;
     margin-bottom: 20px;
 }
 
+.card-paragraph {
+    margin-bottom: 20px;
+}
+
+.card-icon {
+    color:#0084FD;
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
 .hero img {
 	display: block;
+    margin-top: 20px;
 }
 
 /*UTILITIES*/
