@@ -41,13 +41,23 @@ body {
     flex-wrap: wrap;
 }
 
+/*COMPONENTS*/
+
+.button {
+	background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
 /*HEADER*/
 
 .page-header {
 	background-color: #0084FD;
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .page-header .row {
@@ -63,8 +73,21 @@ body {
 	display: none
 }
 
-/*COMPONENTS*/
-
 /*UTILITIES*/
 
 /*RESPONSIVE*/
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 1200px;
+    }
+
+    .header-menu {
+	    display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+    .burger-menu {
+        display: none
+    }
+}
