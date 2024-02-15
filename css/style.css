@@ -1,0 +1,70 @@
+/*RESET*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol,
+menu {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*LAYOUT*/
+
+.container, .container-sm {
+	width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+	padding: 0 12px;
+}
+
+.row {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+/*HEADER*/
+
+.page-header {
+	background-color: #0084FD;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.page-header .row {
+    justify-content: space-between;	
+    align-items: center;
+}
+
+.page-header .logo {
+    width: 50px;
+}
+
+.header-menu {
+	display: none
+}
+
+/*COMPONENTS*/
+
+/*UTILITIES*/
+
+/*RESPONSIVE*/
