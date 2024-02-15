@@ -64,8 +64,7 @@ body {
 .page-header {
 	background-color: #0084FD;
     color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 12px;
     margin-bottom: 30px;
 }
 
@@ -128,6 +127,18 @@ body {
 /*UTILITIES*/
 
 /*RESPONSIVE*/
+
+@media (min-width: 576px) {
+    .hero .col {
+        width: calc(4 * 100% / 12);
+    }
+    .hero .col.col-demo {
+        width: calc(8 * 100% / 12);
+    }
+    .hero img {
+        width: 200px;
+    }
+}
 
 @media (min-width: 992px) {
     .container{
