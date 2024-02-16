@@ -355,7 +355,8 @@ body {
     font-size: 60px;
     color: #9792E4;
     position:absolute;
-    left: 150px;
+    left: 160px;
+    z-index: 999;
 }
 
 .about-us .text-big {
@@ -391,7 +392,7 @@ body {
     .partners .card-paragraph {
         text-align: left;
     }
-    .portrait {
+    .partners .portrait {
         min-width: 200px;
         margin-right: 20px;
     }
@@ -405,6 +406,14 @@ body {
     }
     .benefits .card .card-subtitle {
         font-size: 25px;
+    }
+
+    .quote-mark {
+        right: 70px;
+        left: auto;
+    }
+    .about-us .description {
+        padding: 0 40px;
     }
 }
 
@@ -429,8 +438,19 @@ body {
         font-size: 35px;
     }
 
-    .portrait {
+    .partners .portrait {
         margin-right: 50px;
     }
     
+    .about-us .portrait {
+        min-width: 200px;
+        min-height: 200px;
+    }
+    .quote-mark {
+        right: 345px;
+        font-size: 70px;
+    }
+    .about-us h2 {
+        padding-right: 70px;
+    }
 }
