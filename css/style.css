@@ -281,6 +281,20 @@ body {
     .strategic-img-1 {
         margin: 50px 0;
     }
+
+    .partners .card {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .partners .card-paragraph {
+        text-align: left;
+    }
+
+    .portrait {
+        min-width: 200px;
+        margin-right: 20px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -297,12 +311,15 @@ body {
         display: flex;
     }
     
-    
     .strategic .card img {
         width: 250px;
     }
     .strategic h1 {
         font-size: 35px;
+    }
+
+    .portrait {
+        margin-right: 50px;
     }
     
 }
