@@ -111,6 +111,13 @@ body {
     padding: 0 40px;
 }
 
+.button.button-small {
+	background-color:#9792E4;
+    color: white;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
 /*HEADER*/
 
 .page-header {
@@ -258,17 +265,16 @@ body {
     margin: 20px 0;
 }
 
-.portrait {
+.partners .portrait {
     display: inline-block;
     position: relative;
     width: 200px;
     height: 200px;
     overflow: hidden;
-    border-radius: 50%;
-    
+    border-radius: 50%;  
 }
 
-.portrait img {
+.partners .portrait img {
     width: auto;
     height: 100%;
     margin-left: -50px;
@@ -311,6 +317,51 @@ body {
 .benefits .card .card-subtitle {
     font-size: 20px;
     margin-top: 20px;
+}
+
+/*ABOUT US SECTION*/
+
+.about-us {
+    padding: 50px 0;
+}
+
+.about-us .section-title {
+    font-size: 50px;
+    color: #9792E4;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    line-height: 1.85em;
+    margin-bottom: 30px;
+}
+
+
+.about-us .portrait {
+    display: inline-block;
+    position: relative;
+    width: 175px;
+    height: 175px;
+    overflow: hidden;
+    border-radius: 50%;  
+}
+
+.about-us .portrait img {
+    width: auto;
+    height: 100%;
+}
+
+.quote-mark {
+    font-size: 60px;
+    color: #9792E4;
+    position:absolute;
+    left: 150px;
+}
+
+.about-us .text-big {
+    color: #9792E4;
+    line-height: 1.5em;
+    margin: 20px 0;
 }
 
 /*UTILITIES*/
