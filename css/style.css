@@ -27,6 +27,14 @@ body {
 
 /*LAYOUT*/
 
+.container{
+    max-width: 1224px;
+}
+
+.container-sm {
+    max-width: 964px;
+}
+
 .container, .container-sm {
 	width: 100%;
     margin: 0 auto;
@@ -36,6 +44,32 @@ body {
 .row {
 	display: flex;
     flex-wrap: wrap;
+    row-gap: 24px;
+}
+
+.row > * {
+	padding: 0 12px;
+}
+
+.col-12 {
+	width: calc(12 * 100% / 12);
+}
+
+@media (min-width: 576px) {
+    .col-md-4 {
+        width: calc(4 * 100% / 12);
+    }
+
+    .col-md-8 {
+        width: calc(8 * 100% / 12);
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-6 {
+        width: calc(6 * 100% / 12);
+    }
+
 }
 
 /*COMPONENTS*/
@@ -70,7 +104,6 @@ body {
 	background-color: #0084FD;
     color: white;
     padding: 15px 12px;
-    margin-bottom: 30px;
 }
 
 .page-header .row {
@@ -79,7 +112,7 @@ body {
 }
 
 .page-header .logo {
-    width: 50px;
+    display:block;
 }
 
 .header-menu {
@@ -89,37 +122,34 @@ body {
 /*HERO*/
 
 .hero {
-    padding-bottom: 50px;
+    padding: 50px 0;
+}
+
+[class^='col-'] > .card {
+	height: 100%;
 }
 
 .hero .card {
-    height: 100%;
 	background-color: #B5DDFF;
     color: #617789;
-    padding: 20px 20px 0;
     border-radius: 20px;
 }
 
-.hero .row {
-    row-gap: 24px;
-}
-
-.hero .col {
-    padding: 0 12px;
-}
-
-.hero .col:not(.col-demo) .card-body {
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 30px 20px;
 }
 
 .hero .card-title {
 	color: #0084FD;
-    margin-bottom: 20px;
 }
 
-.hero .card-paragraph {
-    margin-bottom: 20px;
+.card .card-body p {
+    line-height: 1.80em;
 }
 
 .hero .card-icon {
@@ -130,7 +160,25 @@ body {
 
 .hero img {
 	display: block;
-    margin-top: 20px;
+    margin: 0 auto;
+	width: 250px;
+}
+
+@media (min-width: 576px) {
+    .hero img {
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero img {
+        margin: 0 auto;
+    }
+
+    .card.card-demo > * {
+        width: 50%;
+    }
+
 }
 
 /*STRATEGIC SECTION*/
@@ -138,12 +186,7 @@ body {
 .strategic {
 	background-color: #9792E4;
     color: white;
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
-
-.strategic .col {
-	padding: 0 12px;
+    padding: 50px 0;
 }
 
 .strategic .card {
@@ -177,14 +220,8 @@ body {
 /*RESPONSIVE*/
 
 @media (min-width: 576px) {
-    .hero .col {
-        width: calc(4 * 100% / 12);
-    }
-    .hero .col.col-demo {
-        width: calc(8 * 100% / 12);
-    }
     .hero img {
-        width: 200px;
+        width: 220px;
     }
 
     .strategic h1 {
@@ -196,10 +233,6 @@ body {
 }
 
 @media (min-width: 992px) {
-    .container{
-        max-width: 1200px;
-    }
-
     .header-menu {
 	    display: flex;
         gap: 24px;
@@ -212,20 +245,8 @@ body {
     .card-demo {
         display: flex;
     }
-    .card-demo .card-body {
-        width: 50%;
-    }
     
-    .container-sm {
-        max-width: 940px;
-    }
-    .strategic .col {
-        width: calc(6 * 100% / 12);
-        padding: 0 24px;
-    }
-    .strategic .row {
-        margin: 0 -12px;
-    }
+    
     .strategic .card img {
         width: 250px;
     }
