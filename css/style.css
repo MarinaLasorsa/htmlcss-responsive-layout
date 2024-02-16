@@ -184,23 +184,6 @@ body {
 	width: 250px;
 }
 
-@media (min-width: 576px) {
-    .hero img {
-        margin: 0;
-    }
-}
-
-@media (min-width: 992px) {
-    .hero img {
-        margin: 0 auto;
-    }
-
-    .card.card-demo > * {
-        width: 50%;
-    }
-
-}
-
 /*STRATEGIC SECTION*/
 
 .strategic {
@@ -376,6 +359,7 @@ body {
 @media (min-width: 576px) {
     .hero img {
         width: 220px;
+        margin: 0;
     }
 
     .strategic h1 {
@@ -427,6 +411,13 @@ body {
         display: none
     }
 
+    .hero img {
+        margin: 0 auto;
+    }
+
+    .card.card-demo > * {
+        width: 50%;
+    }
     .card-demo {
         display: flex;
     }
